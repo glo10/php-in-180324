@@ -26,3 +26,6 @@ $userAssoc = array(
 $userAssoc['city'] = 'Paris';
 var_dump($tab);
 echo 'Prénom : '.$tab2['firstname'];
+
+// Ajout des éléments à partir des fonctions natives
+array_push($user, 'Nantes', 'Lens', 'Reims');
