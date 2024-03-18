@@ -9,7 +9,7 @@
 
 ---
 
-## PARTIE I
+## PARTIE I : installation environnement de développement PHP
 
 ### Installation des logiciels pour avoir Apache, PHP et MySQL (et MariaDB) selon les OS
 
@@ -55,16 +55,15 @@ Pour l’installation suivre le [tutoriel d’OVH](https://help.ovhcloud.com/csm
 
 ---
 
-<!-- ### Installation de composer (gestionnaire des paquets pour PHP, équivalent de npm côté JS) -->
-
----
-## PARTIE II
+## PARTIE II : installation extension Visual Studio Code pour PHP
 
 ### Extension Visual Studio Code pour PHP
 
 ![ext](./0-installation/img/extension.png)
 
 ---
+
+## PARTIE III : lancement programme PHP
 
 ### 3 façons d'exécuter vos projets PHP
 
@@ -93,3 +92,5 @@ Depuis un terminal, à la racine de votre projet, pour interpréter votre code P
 Même réflexion que précédemment sur les chemins avant l'exécution de cette commande.
 
 PS : vous pouvez renseigner le port que vous voulez sauf les ports déjà réservés par d'autres applications.
+
+<!-- ### Installation de composer (gestionnaire des paquets pour PHP, équivalent de npm côté JS) -->
