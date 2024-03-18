@@ -60,6 +60,7 @@ Pour l’installation suivre le [tutoriel d’OVH](https://help.ovhcloud.com/csm
 ### Extension Visual Studio Code pour PHP
 
 - Installez [Visual Studio Code](https://code.visualstudio.com/download)
+- Installez l'extension *PHP-ALL-IN-ONE* ci-dessous
 ![ext](./0-installation/img/extension.png)
 
 ---
