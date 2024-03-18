@@ -9,9 +9,9 @@
 
 ---
 
-## Installation des logiciels pour avoir Apache, PHP et MySQL (et MariaDB)
+## Installation des logiciels pour avoir Apache, PHP et MySQL (et MariaDB) selon les OS
 
-### WAMP
+### WAMP pour Windows
 
 Pour les utilisateurs de Windows
 - Installez l’environnement de développement de PHP pour Windows depuis WampServer en 64 bits ou 32 bits selon la configuration de votre machine
@@ -28,7 +28,7 @@ Pour les utilisateurs de Windows
 
 ---
 
-### MAMP
+### MAMP pour MacOs
 
 Environnement de développement adapté pour les utilisateurs de MacOS à installer depuis [MAMP.info](https://mamp.info)
 On retrouve les mêmes technologies que sur Wamp
@@ -37,12 +37,18 @@ On retrouve les mêmes technologies que sur Wamp
 
 ---
 
-### LAMP
+### LAMP pour Linux
 
 Pour LAMP, il faut installer les paquets individuellement selon sa distribution Linux (Ubuntu, CentOs, Debian, etc.)
 Pour l’installation suivre le [tutoriel d’OVH](https://help.ovhcloud.com/csm/fr-dedicated-servers-setup-lamp-debian-ubuntu?id=kb_article_view&sysparm_article=KB0043615)
 
 ![lamp](./0-installation/img/lamp.jpg)
+
+---
+
+### Alternative à WAMP/MAMP/LAMP avec Laragon
+
+- [Laragon Multiplateforme](https://laragon.org/download/)
 
 ---
 
@@ -75,6 +81,11 @@ Accédez au nom de domaine depuis le navigateur pour accéder au programme
 
 ### Depuis le CLI (Command Line Interface) de PHP
 
-Depuis un terminal, à la racine de votre projet, exécutez à la commande suivante : `php -S http://localhost:8080`.
+Depuis un terminal (console), à la racine de votre projet, pour interpréter votre code PHP avec une sortie sur le terminal, exécutez à la commande suivante : `php index.php`.
+`index.php` est le nom du fichier (si votre fichier s'appelle autrement, il suffit de le mentionner à la place). Attention à bien tenir compte du chemin du dossier qui exécute cette commande et à bien respecter votre arborescence des fichiers avant d'arriver au fichier final.
+
+Depuis un terminal, à la racine de votre projet, pour interpréter votre code PHP par un navigateur, exécutez à la commande suivante : `php -S http://localhost:8080 src/index.php`.
+
+Même réflexion que précédemment sur les chemins avant l'exécution de cette commande.
 
 PS : vous pouvez renseigner le port que vous voulez sauf les ports déjà réservés par d'autres applications.
