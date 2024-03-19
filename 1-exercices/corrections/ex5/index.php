@@ -10,6 +10,7 @@
  */
 function multiply(int $max = 10, int $endTable = 12, int $startTable = 1) : array {
   $results = [];
+  $results[] = array();// pour les puristes afin d'avoir un tableau qui commence à 0
   for($i = $startTable; $i <= $endTable; $i++) {
     for ($j = 1; $j <= $max; $j++) {
       $result = $i * $j; 
