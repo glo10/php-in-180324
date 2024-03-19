@@ -1,9 +1,12 @@
 <?php
 
 class Category implements AddRemoveInterface {
-  private int $id;
-  private string $name;
-  private string $type;
+  public function __construct(
+    private int $id,
+    private string $name,
+    private string $type
+  ) {}
+
   public function add() : void {
     echo 'add';
   }
@@ -18,18 +21,6 @@ class Category implements AddRemoveInterface {
   public function getId()
   {
     return $this->id;
-  }
-
-  /**
-   * Set the value of id
-   *
-   * @return  self
-   */ 
-  public function setId($id)
-  {
-    $this->id = $id;
-
-    return $this;
   }
 
   /**
