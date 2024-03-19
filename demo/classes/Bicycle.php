@@ -1,5 +1,5 @@
 <?php
-class Bicycle extends Vehicule {
+class Bicycle extends Vehicle {
   private string $color;
   // De manière implicite par le lien de l'héritage on
   // va hériter des propriétés et méthodes public et protégé

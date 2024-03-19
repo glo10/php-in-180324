@@ -1,6 +1,6 @@
 <?php
 
-class Car extends Vehicule {
+class Car extends Vehicle {
   private string $brand;
   // hérite des propriétés et méthodes protected et/ou public
   public function show() {
