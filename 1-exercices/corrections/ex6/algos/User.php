@@ -1,10 +1,8 @@
 <?php
 
-namespace Glodie\Algos;
-
 class User {
   private int $age;
-  
+
   public function getGeneration() : string {
     if($this->age <= 10) {
       return 'Enfant';
