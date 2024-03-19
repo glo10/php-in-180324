@@ -13,4 +13,24 @@ class Bicycle extends Vehicle {
     $fromParent =  parent::stop();
     return 'La réponse est '.$fromParent;
   }
+
+  /**
+   * Get the value of color
+   */ 
+  public function getColor()
+  {
+    return $this->color;
+  }
+
+  /**
+   * Set the value of color
+   *
+   * @return  self
+   */ 
+  public function setColor($color)
+  {
+    $this->color = $color;
+
+    return $this;
+  }
 }

@@ -1,7 +1,7 @@
 <?php
 
 interface CrudInterface {
-  function create();
+  function create($entity = null, $isNew = true) : bool;
   function read();
   function update();
   function delete();
