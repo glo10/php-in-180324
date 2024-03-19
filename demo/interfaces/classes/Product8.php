@@ -11,7 +11,8 @@ class ProductBefore8  {
 }
 
 /**
- * Constructeur compacte
+ * Constructeur compacte depuis PHP 8 qui donne exactement
+ * le même résultat que le code ci-dessus
  */
 class ProductSince8  {
   public function __construct(private string $name, private ?string $description) {}
