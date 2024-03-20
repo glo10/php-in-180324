@@ -3,7 +3,6 @@
 try {
   header('Content-Type: application/json');
   require_once dirname(__FILE__).'/classes/User.php';
-  require_once dirname(__FILE__).'/classes/File.php';
   require_once dirname(__FILE__).'/classes/UserFormValidator.php';
 
   $_POST = array_map('htmlspecialchars', $_POST);
