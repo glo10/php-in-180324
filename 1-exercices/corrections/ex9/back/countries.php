@@ -2,7 +2,7 @@
 require_once dirname(__FILE__).'/classes/Country.php';
 try {
   $country = new Country();
-  $countries = $country->findAll();
+  $countries = Country::findAll();
   if(count($countries) === 0) {
     throw new JsonException();
   }

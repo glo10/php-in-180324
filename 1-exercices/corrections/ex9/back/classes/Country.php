@@ -3,7 +3,7 @@
 class Country
 {
   private const DIR = '/data/countries_and_cities.json';
-  public function findAll()
+  public static function findAll()
   {
     $content = self::getXMLContent(dirname(__DIR__) . '/' . self::DIR);
     $countries = [];
