@@ -12,7 +12,7 @@
 
 ## Aide sans la validation avec les Regex
 
-- Utilisez pour les vérifications la fonctions [empty()](https://www.php.net/manual/fr/function.empty) ou [isset()](https://www.php.net/manual/fr/function.isset.php)
+- Utilisez pour les vérifications la fonctions [empty()](https://www.php.net/manual/fr/function.empty) ou [isset()](https://www.php.net/manual/fr/function.isset.php) ou [filter_input](https://www.php.net/manual/fr/function.filter-input.php)
 
 ## Aide avec validation via les REGEX (En bonus et en option)
 
