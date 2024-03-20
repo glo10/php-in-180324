@@ -14,8 +14,4 @@ class City
       }
     }
   }
-
-  public function getXMLContent($directory) {
-    return json_decode(file_get_contents($directory));
-  }
 }
