@@ -30,6 +30,6 @@ try {
   } else {
     echo '{"message":"KO"}';
   }
-} catch(Exception $e) {
+} catch(Exception|Error $e) {
   echo json_encode(['error' => 'contact admin please ! ']);
 }

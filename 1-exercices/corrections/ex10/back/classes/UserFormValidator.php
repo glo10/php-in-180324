@@ -73,6 +73,10 @@ class UserFormValidator {
 
   private function checkLocation($key) {
     $location = '';
+    if($this->user->getCountry() === null) {
+      throw new Error('Le pays ne peut pas être nulle');
+    }
+
     if($this->user->getCity() === null) {
       throw new Error('La ville ne peut pas être nulle');
     }
