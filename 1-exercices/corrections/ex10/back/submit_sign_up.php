@@ -31,5 +31,6 @@ try {
     echo '{"message":"KO"}';
   }
 } catch(Exception|Error $e) {
-  echo json_encode(['error' => 'contact admin please ! ']);
+  var_dump($e->getMessage());
+  echo json_encode(['error' => 'contact admin please !']);
 }

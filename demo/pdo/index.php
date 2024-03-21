@@ -2,16 +2,23 @@
 
 try {
   $requestSQL = 'SELECT id, name FROM country WHERE id=? AND name=?';
-  // Req préparée avec tableau numérique SELECT id, name FROM country WHERE id=? AND name=?'
-  // Respectez absolument l'ordre
-  // parametres avec les ?$parameters = [7, "Angola"]
+  /**
+   * Req préparée avec tableau numérique SELECT id, name FROM country WHERE id=? AND name=?'
+   * Respectez absolument l'ordre
+   * parametres avec $parameters = [7, "Angola"]
+   */
 
-  // Req préparée avec tableau associatif SELECT id, name FROM country WHERE id=:id AND name=:name'
-  // L'ordre n'
-  // parametres avec les ?$parameters = [":id" => 7, ":name" => "Angola"]
+  /**
+   * Req préparée avec tableau associatif SELECT id, name FROM country WHERE id=:id AND name=:name'
+   * L'ordre n'a pas d'importance
+   * Parametres avec les ?$parameters = [":id" => 7, ":name" => "Angola"]
+   */
 
-  // avec un LIKE
-  // SELECT id, name FROM country WHERE name LIKE "%:name%"
+  /**
+   * Avec un LIKE
+   * SELECT id, name FROM country WHERE name LIKE :name"
+   * $parameters = [':name' => '%Angola%']; ou si c'est une variable [':name' => '%'.$name.'%']
+   */
   $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc-rss','root','');
   // avec query
   // $results = $db->query($requestSQL);
