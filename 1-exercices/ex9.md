@@ -14,7 +14,7 @@
 
 - Utilisez pour les vérifications la fonctions [empty()](https://www.php.net/manual/fr/function.empty) ou [isset()](https://www.php.net/manual/fr/function.isset.php) ou [filter_input](https://www.php.net/manual/fr/function.filter-input.php)
 
-## Aide avec validation via les REGEX (En bonus et en option)
+## Aide avec validation via les REGEX (en bonus et en option)
 
 Voici des expressions régulières pour les champs du formulaire :
 - email : `"/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i"`
@@ -32,5 +32,5 @@ Voici des expressions régulières pour les champs du formulaire :
 3. Récupérez les pays
 4. Récupérez les villes
 3. Récupérez et vérifiez les données soumises par le formulaire d'inscription.
-Dans le cas où tout serait renseigné et au bon format, vous pouvez retournez une réponse au format JSON du type `{"message" => "OK"}`.
+Dans le cas où tout serait renseigné et au bon format, vous pouvez retourner une réponse au format JSON du type `{"message" => "OK"}`.
 Dans le cas contaire `{"message" => "KO"}`
