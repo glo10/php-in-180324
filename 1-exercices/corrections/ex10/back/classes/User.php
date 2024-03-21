@@ -20,7 +20,12 @@ class User {
       ->setCity($city)
       ->setCountry($country);
   }
-
+  /**
+   * Méthode magique appelée automatiquement
+   * lorsqu'on essaye d'utiliser un objet comme une chaîne de caractères
+   *
+   * @return string
+   */
   public function __toString()
   {
     return json_encode(get_object_vars($this));
