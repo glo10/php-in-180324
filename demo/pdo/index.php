@@ -1,7 +1,17 @@
 <?php
 
 try {
-  $requestSQL = 'SELECT id, name FROM country LIMIT 5';
+  $requestSQL = 'SELECT id, name FROM country WHERE id=? AND name=?';
+  // Req préparée avec tableau numérique SELECT id, name FROM country WHERE id=? AND name=?'
+  // Respectez absolument l'ordre
+  // parametres avec les ?$parameters = [7, "Angola"]
+
+  // Req préparée avec tableau associatif SELECT id, name FROM country WHERE id=:id AND name=:name'
+  // L'ordre n'
+  // parametres avec les ?$parameters = [":id" => 7, ":name" => "Angola"]
+
+  // avec un LIKE
+  // SELECT id, name FROM country WHERE name LIKE "%:name%"
   $db = new PDO('mysql:host=localhost;port=3308;dbname=mvc-rss','root','');
   // avec query
   // $results = $db->query($requestSQL);
@@ -9,9 +19,10 @@ try {
   //   var_dump($row);
   // }
   $pdoStatement = $db->prepare($requestSQL);
-  if($pdoStatement->execute()) { 
+  $parameters = [7, "Angola"];
+  if($pdoStatement->execute($parameters)) { 
     // avec fetchAll et les options sur le format du résultat
-    $resultsFetchAll = $pdoStatement->fetchAll();
+    $resultsFetchAll = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
     var_dump($resultsFetchAll);
   }
 } catch(PDOException $e) {
